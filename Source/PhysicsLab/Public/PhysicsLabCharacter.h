@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "PhysicsLabCharacter.generated.h"
+#include "PhysicsLabCharacter.generated.h" 
 
 UCLASS(config=Game)
 class APhysicsLabCharacter : public ACharacter

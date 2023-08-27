@@ -4,7 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "PhysicsLabGameMode.generated.h"
+#include "PhysicsLabGameMode.generated.h" 
+
 
 UCLASS(minimalapi)
 class APhysicsLabGameMode : public AGameModeBase
@@ -13,6 +14,13 @@ class APhysicsLabGameMode : public AGameModeBase
 
 public:
 	APhysicsLabGameMode();
+
+private:
+	UPROPERTY(EditDefaultsOnly)
+		TSubclassOf<class APlaneController> PlaneControllerClass;
+
+	UPROPERTY(EditDefaultsOnly)
+	class APlaneController* PlaneController;
 };
 
 
